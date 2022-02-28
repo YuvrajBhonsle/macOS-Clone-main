@@ -1,0 +1,119 @@
+#finder-app {
+    display: none;
+    position: absolute;
+    background-color: #242423;
+    left: 350px;
+    top: 100px;
+    width: 850px;
+    height: 450px;
+    padding: 0px;
+    border-radius: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    /* box-shadow:1px 10px 10px 5px #242422; */
+}
+
+#finder-app #upframe {
+    position: absolute;
+    width: inherit;
+    height: 25px;
+    top: 0px;
+    left: 0;
+    background-color: #242423;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#upframe #close {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 10px;
+    top: 8px;
+    background-color: #ff5e52;
+    border-radius: 50%;
+}
+
+#upframe #minimize {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 30px;
+    top: 8px;
+    background-color: #ffbc2a;
+    border-radius: 50%;
+}
+
+#upframe #maximize {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 50px;
+    top: 8px;
+    background-color: #24ca3f;
+    border-radius: 50%;
+}
+
+#finder_dot {
+    position: absolute;
+    top: 45px;
+    width: 5px;
+    height: 5px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    left: 25px;
+}
+
+.app_finder {
+    position: absolute;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 44%;
+}
+
+#finder-app #cmd {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#finder-app #cmd-in {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 4px;
+    color: greenyellow;
+    font-size: 18px;
+}
+
+#finder-app #cmd-in input {
+    background-color: transparent;
+    border: none;
+    color: greenyellow;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: monospace
+}
+
+#finder-app #cmd-in input:focus {
+    background-color: transparent;
+    border: black;
+    box-shadow: #121212;
+    text-decoration: none;
+    outline: none;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+        width: 15px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
